@@ -293,7 +293,6 @@ color: var(--accent-color);}
 
 .team {
     background: var(--secondary-backgraund-cilor);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
     
 }
 .card {
@@ -357,7 +356,7 @@ color: var(--accent-color);}
     color: var(--secondary-title-text-color);
     border-color: var(--main-page-color);
     border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
  
 }
 .social-media-link:hover,
@@ -394,34 +393,34 @@ color: var(--accent-color);}
     
 
 .clients-list {
-    box-sizing: border-box;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    contain: content;
+    box-sizing: border-box;  
     padding: 0;
     width: 170px;
-    height: 92px;
-    border: 1px solid var(--secondary-title-text-color);
-    border-radius: 4px;
+    height: 92px;    
     --items:6;
 }
 
-
-.clients-list:hover,
-.clients-list:focus,
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
-    fill: var(--accent-color);
+   color: var(--accent-color);
 }
-.clients-icon {    
-    padding: 16px 32px;    
-    fill: var(--secondary-title-text-color);
+.clients-icon {  
+    fill: currentColor;
 }
 
-.clients-link {
+
+.clients-link {  
+    display: block;
+    padding: 16px 32px;
+    display: flex;
     object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+    border: 1px solid var(--secondary-title-text-color);
+    border-radius: 4px;
+    color: var(--secondary-title-text-color);
 }
 
 /* footer */
@@ -525,16 +524,20 @@ color: var(--accent-color);}
     color: var(--main-page-color);
     border-color: var(--main-page-color);
     border-radius: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* page portfolio*/
 
 .card-portfolio {
     background: var(--main-page-color);
-    width: 370px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 370px;   
 
+}
+
+.card-portfolio:hover,
+.card-portfolio:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .inner {
     padding: 20px 24px;
