@@ -411,8 +411,7 @@ color: var(--accent-color);}
 
 
 .clients-link {  
-    display: block;
-    padding: 16px 32px;
+    height: 92px;
     display: flex;
     object-fit: contain;
     justify-content: center;
